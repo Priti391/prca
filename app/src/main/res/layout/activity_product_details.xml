@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/cbg">
+
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:text="Product Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_below="@id/productNameTextView"
+        android:text="Price:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <!-- Add more TextViews for product details (specifications, features, availability) -->
+    <TextView
+        android:id="@+id/productFeaturesTextView"
+        android:layout_below="@id/productPriceTextView"
+        android:text="Features:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/productAvailabilityTextView"
+        android:layout_below="@id/productFeaturesTextView"
+        android:text="Availability:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product_placeholder"
+        android:contentDescription="@string/product_image" />
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productImageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_to_cart" />
+
+    <!-- Product Reviews -->
+    <TextView
+        android:id="@+id/productReviewsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addToCartButton"
+        android:text="@string/product_reviews"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold" />
+
+    <!-- Related Products -->
+    <TextView
+        android:id="@+id/relatedProductsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productReviewsTextView"
+        android:text="@string/related_products"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:textStyle="bold" />
+
+
+    <!-- Product Variants -->
+    <Spinner
+        android:id="@+id/productVariantsSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productAvailabilityTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+
+
+</RelativeLayout>

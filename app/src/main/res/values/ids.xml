@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="productRecyclerView" type="id" />
+    <item name="nameTextView" type="id" />
+    <item name="priceTextView" type="id" />
+    <item name="productImageView" type="id" />
+    <item name="username" type="id" />
+    <item name="addToCartButton" type="id" />
+    <item name="productReviewsTextView" type="id" />
+    <item name="relatedProductsTextView" type="id" />
+    <item name="productVariantsSpinner" type="id" />
+    <item name="recyclerViewFavorites" type="id" />
+</resources>
